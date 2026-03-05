@@ -10,5 +10,8 @@ def also_does_nothing():
 def yet_another_nothing():
     pass
 
+def do_not_anything():
+    pass
+
 if __name__ == "__main__":
     do_nothing()
