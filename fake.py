@@ -1,0 +1,8 @@
+# fake.py
+# This file does nothing. Used for testing purposes.
+
+def do_nothing():
+    pass
+
+if __name__ == "__main__":
+    do_nothing()
