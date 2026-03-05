@@ -16,5 +16,8 @@ def do_not_anything():
 def do_something_jk():
     pass
 
+def will_it_do_something_nah():
+    pass
+
 if __name__ == "__main__":
     do_nothing()
