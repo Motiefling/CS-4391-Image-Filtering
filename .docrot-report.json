@@ -1,11 +1,11 @@
 {
   "meta": {
     "repo_path": "G:\\My Drive\\..School\\.Spring 2026\\CS 4485 - CS Project\\Docrot Detector\\repos\\Motiefling\\CS-4391-Image-Filtering",
-    "commit_hash": "1433b3a862f2f91ff1a3a80a46d0ec432eea27f4",
-    "timestamp": "2026-03-05T15:41:31.750142",
-    "total_issues": 3,
+    "commit_hash": "69c241390eb434e219c60423ba41ee050f93f521",
+    "timestamp": "2026-03-05T15:57:35.912320",
+    "total_issues": 2,
     "severity_summary": {
-      "high": 3,
+      "high": 2,
       "medium": 0,
       "low": 0
     }
@@ -15,29 +15,15 @@
       "reason": "signature_changed",
       "severity": "high",
       "code_element": {
-        "name": "src/fake.py::alsoooo_does_nothing",
+        "name": "src/fake.py::dooooo_nothing",
         "file_path": "src/fake.py",
-        "signature": "alsoooo_does_nothing()",
+        "signature": "dooooo_nothing()",
         "params": [],
         "return_type": null
       },
       "doc_reference": null,
-      "message": "[signature_changed] 'src/fake.py::alsoooo_does_nothing' \u2014 function added (public API) (score: 5)",
-      "suggestion": "Update documentation for 'src/fake.py::alsoooo_does_nothing' to reflect the new signature."
-    },
-    {
-      "reason": "signature_changed",
-      "severity": "high",
-      "code_element": {
-        "name": "src/fake.py::hahaha_jk",
-        "file_path": "src/fake.py",
-        "signature": "hahaha_jk()",
-        "params": [],
-        "return_type": null
-      },
-      "doc_reference": null,
-      "message": "[signature_changed] 'src/fake.py::hahaha_jk' \u2014 function added (public API) (score: 5)",
-      "suggestion": "Update documentation for 'src/fake.py::hahaha_jk' to reflect the new signature."
+      "message": "[signature_changed] 'src/fake.py::dooooo_nothing' \u2014 function added (public API) (score: 5)",
+      "suggestion": "Update documentation for 'src/fake.py::dooooo_nothing' to reflect the new signature."
     },
     {
       "reason": "docstring_stale",
@@ -50,7 +36,7 @@
         "return_type": null
       },
       "doc_reference": null,
-      "message": "[doc_file_flagged] 'README.md' \u2014 function added (public API) (cumulative score: 10)",
+      "message": "[doc_file_flagged] 'README.md' \u2014 function added (public API) (cumulative score: 5)",
       "suggestion": "Review 'README.md' \u2014 linked code logic has changed."
     }
   ]

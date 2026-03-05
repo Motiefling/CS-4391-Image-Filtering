@@ -2,40 +2,30 @@
  DOCUMENTATION ROT DETECTOR - SCAN REPORT
 ============================================================
  Repo   : G:\My Drive\..School\.Spring 2026\CS 4485 - CS Project\Docrot Detector\repos\Motiefling\CS-4391-Image-Filtering
- Commit : 1433b3a862f2f91ff1a3a80a46d0ec432eea27f4
- Time   : 2026-03-05T15:41:31.750142
- Issues : 3 total (High: 3, Medium: 0, Low: 0)
+ Commit : 69c241390eb434e219c60423ba41ee050f93f521
+ Time   : 2026-03-05T15:57:35.912320
+ Issues : 2 total (High: 2, Medium: 0, Low: 0)
 ============================================================
 
  Issue #1 [HIGH]
 ------------------------------------------------------------
  Reason    : signature_changed
- Symbol    : src/fake.py::alsoooo_does_nothing
+ Symbol    : src/fake.py::dooooo_nothing
  Code file : src/fake.py
- Signature : alsoooo_does_nothing()
+ Signature : dooooo_nothing()
 
- ! [signature_changed] 'src/fake.py::alsoooo_does_nothing' — function added (public API) (score: 5)
- > Suggestion: Update documentation for 'src/fake.py::alsoooo_does_nothing' to reflect the new signature.
+ ! [signature_changed] 'src/fake.py::dooooo_nothing' — function added (public API) (score: 5)
+ > Suggestion: Update documentation for 'src/fake.py::dooooo_nothing' to reflect the new signature.
 
  Issue #2 [HIGH]
-------------------------------------------------------------
- Reason    : signature_changed
- Symbol    : src/fake.py::hahaha_jk
- Code file : src/fake.py
- Signature : hahaha_jk()
-
- ! [signature_changed] 'src/fake.py::hahaha_jk' — function added (public API) (score: 5)
- > Suggestion: Update documentation for 'src/fake.py::hahaha_jk' to reflect the new signature.
-
- Issue #3 [HIGH]
 ------------------------------------------------------------
  Reason    : docstring_stale
  Symbol    : README.md
  Code file : README.md
 
- ! [doc_file_flagged] 'README.md' — function added (public API) (cumulative score: 10)
+ ! [doc_file_flagged] 'README.md' — function added (public API) (cumulative score: 5)
  > Suggestion: Review 'README.md' — linked code logic has changed.
 
 ============================================================
- Scan complete. 3 issue(s) require attention.
+ Scan complete. 2 issue(s) require attention.
 ============================================================
