@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "repo_path": "G:\\My Drive\\..School\\.Spring 2026\\CS 4485 - CS Project\\Docrot Detector\\repos\\Motiefling\\CS-4391-Image-Filtering",
+    "commit_hash": "5de6122dbe57a4ba1192a0bd118fe2b5a8512d7b",
+    "timestamp": "2026-03-05T14:57:46.210459",
+    "total_issues": 2,
+    "severity_summary": {
+      "high": 2,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "issues": [
+    {
+      "reason": "signature_changed",
+      "severity": "high",
+      "code_element": {
+        "name": "src/fake.py::will_it_do_something_nah",
+        "file_path": "src/fake.py",
+        "signature": "will_it_do_something_nah()",
+        "params": [],
+        "return_type": null
+      },
+      "doc_reference": null,
+      "message": "[signature_changed] 'src/fake.py::will_it_do_something_nah' \u2014 function added (public API) (score: 5)",
+      "suggestion": "Update documentation for 'src/fake.py::will_it_do_something_nah' to reflect the new signature."
+    },
+    {
+      "reason": "docstring_stale",
+      "severity": "high",
+      "code_element": {
+        "name": "README.md",
+        "file_path": "README.md",
+        "signature": "",
+        "params": [],
+        "return_type": null
+      },
+      "doc_reference": null,
+      "message": "[doc_file_flagged] 'README.md' \u2014 function added (public API) (cumulative score: 5)",
+      "suggestion": "Review 'README.md' \u2014 linked code logic has changed."
+    }
+  ]
+}
