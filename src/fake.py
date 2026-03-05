@@ -7,6 +7,9 @@ def do_nothing():
 def also_does_nothing():
     pass
 
+def alsoooo_does_nothing():
+    pass
+
 def yet_another_nothing():
     pass
 
