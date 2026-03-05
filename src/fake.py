@@ -22,5 +22,8 @@ def do_something_jk():
 def will_it_do_something_nah():
     pass
 
+def hahaha_jk():
+    pass
+
 if __name__ == "__main__":
     do_nothing()
