@@ -28,5 +28,8 @@ def will_it_do_something_nah():
 def hahaha_jk():
     pass
 
+def whoaaa():
+    pass
+
 if __name__ == "__main__":
     do_nothing()
