@@ -13,5 +13,8 @@ def yet_another_nothing():
 def do_not_anything():
     pass
 
+def do_something_jk():
+    pass
+
 if __name__ == "__main__":
     do_nothing()
