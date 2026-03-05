@@ -1,0 +1,31 @@
+============================================================
+ DOCUMENTATION ROT DETECTOR - SCAN REPORT
+============================================================
+ Repo   : G:\My Drive\..School\.Spring 2026\CS 4485 - CS Project\Docrot Detector\repos\Motiefling\CS-4391-Image-Filtering
+ Commit : 5de6122dbe57a4ba1192a0bd118fe2b5a8512d7b
+ Time   : 2026-03-05T14:57:46.210459
+ Issues : 2 total (High: 2, Medium: 0, Low: 0)
+============================================================
+
+ Issue #1 [HIGH]
+------------------------------------------------------------
+ Reason    : signature_changed
+ Symbol    : src/fake.py::will_it_do_something_nah
+ Code file : src/fake.py
+ Signature : will_it_do_something_nah()
+
+ ! [signature_changed] 'src/fake.py::will_it_do_something_nah' — function added (public API) (score: 5)
+ > Suggestion: Update documentation for 'src/fake.py::will_it_do_something_nah' to reflect the new signature.
+
+ Issue #2 [HIGH]
+------------------------------------------------------------
+ Reason    : docstring_stale
+ Symbol    : README.md
+ Code file : README.md
+
+ ! [doc_file_flagged] 'README.md' — function added (public API) (cumulative score: 5)
+ > Suggestion: Review 'README.md' — linked code logic has changed.
+
+============================================================
+ Scan complete. 2 issue(s) require attention.
+============================================================
