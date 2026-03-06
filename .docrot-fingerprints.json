@@ -42,6 +42,48 @@
       },
       "stable_id": "src/fake.py::also_does_nothing"
     },
+    "src/fake.py::alsogjgkfdngj_does_nothing": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "src/fake.py",
+      "fingerprint_hash": "d6bdefc4d63f9948e03d5c309d9883b7dc180bab5365a014aee3d220db781be9",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "alsogjgkfdngj_does_nothing",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "src/fake.py::alsogjgkfdngj_does_nothing"
+    },
     "src/fake.py::alsoooo_does_nothing": {
       "calls": {
         "call_names": []
