@@ -10,6 +10,11 @@ def do_nnnnnnnothing():
 def dooooo_nothing():
     pass
 
+
+def doooooooo_nothing():
+    pass
+
+
 def also_does_nothing():
     pass
 
