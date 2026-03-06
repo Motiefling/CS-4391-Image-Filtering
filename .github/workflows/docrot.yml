@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: - uses: SuchiiJain/CS4485_Capstone@github-integration
+      - uses: SuchiiJain/CS4485_Capstone@github-integration
