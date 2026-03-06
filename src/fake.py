@@ -4,6 +4,9 @@
 def do_nothing():
     pass
 
+def do_nnnnnnnothing():
+    pass
+
 def dooooo_nothing():
     pass
 

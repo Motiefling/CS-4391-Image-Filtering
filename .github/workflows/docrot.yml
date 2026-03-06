@@ -1,0 +1,13 @@
+# .github/workflows/docrot.yml
+name: Docrot Detector
+on: [push]
+jobs:
+  docrot:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: - uses: SuchiiJain/CS4485_Capstone@github-integration
