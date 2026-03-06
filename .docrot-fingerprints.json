@@ -587,6 +587,48 @@
         "return_annotation": null
       },
       "stable_id": "src/fake.py::yettttt_another_nothing"
+    },
+    "src/fake.py::yowza": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "src/fake.py",
+      "fingerprint_hash": "ab3b2749f1e93076bc77ce52477c3a0b0252f9848c291e98601b365b5d44c4f7",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "yowza",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "src/fake.py::yowza"
     }
   },
   "src/image_filtering.py": {

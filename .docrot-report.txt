@@ -2,20 +2,20 @@
  DOCUMENTATION ROT DETECTOR - SCAN REPORT
 ============================================================
  Repo   : G:\My Drive\..School\.Spring 2026\CS 4485 - CS Project\Docrot Detector\repos\Motiefling\CS-4391-Image-Filtering
- Commit : bfa9a635c2e5b32bfe4c2790a6d646f48a71feb8
- Time   : 2026-03-05T21:19:23.765853
+ Commit : e1a3c07256fdf495808b31751cd50d71217b5301
+ Time   : 2026-03-05T21:21:51.015054
  Issues : 2 total (High: 2, Medium: 0, Low: 0)
 ============================================================
 
  Issue #1 [HIGH]
 ------------------------------------------------------------
  Reason    : signature_changed
- Symbol    : src/fake.py::do_not_anything_nope
+ Symbol    : src/fake.py::yowza
  Code file : src/fake.py
- Signature : do_not_anything_nope()
+ Signature : yowza()
 
- ! [signature_changed] 'src/fake.py::do_not_anything_nope' — function added (public API) (score: 5)
- > Suggestion: Update documentation for 'src/fake.py::do_not_anything_nope' to reflect the new signature.
+ ! [signature_changed] 'src/fake.py::yowza' — function added (public API) (score: 5)
+ > Suggestion: Update documentation for 'src/fake.py::yowza' to reflect the new signature.
 
  Issue #2 [HIGH]
 ------------------------------------------------------------
