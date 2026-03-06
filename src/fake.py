@@ -28,6 +28,9 @@ def yettttt_another_nothing():
 def do_not_anything():
     pass
 
+def do_not_anything_nope():
+    pass
+
 def do_something_jk():
     pass
 
