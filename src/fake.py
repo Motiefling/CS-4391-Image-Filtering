@@ -25,6 +25,9 @@ def this_is_a_test():
 def sdfgghfhg():
     pass
 
+def test_test():
+    pass
+
 def alsoooo_does_nothing():
     pass
 
