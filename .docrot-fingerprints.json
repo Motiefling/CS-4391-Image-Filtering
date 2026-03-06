@@ -84,6 +84,48 @@
       },
       "stable_id": "src/fake.py::alsoooo_does_nothing"
     },
+    "src/fake.py::do_nnnnnnnothing": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "src/fake.py",
+      "fingerprint_hash": "84ccc25d887f3990d37386b8727936fb5da0bb06d09710aad0b1b8cf3ec3dcf1",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "do_nnnnnnnothing",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "src/fake.py::do_nnnnnnnothing"
+    },
     "src/fake.py::do_not_anything": {
       "calls": {
         "call_names": []
