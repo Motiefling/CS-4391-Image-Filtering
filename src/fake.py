@@ -43,5 +43,8 @@ def hahaha_jk():
 def whoaaa():
     pass
 
+def yowza():
+    pass
+
 if __name__ == "__main__":
     do_nothing()
