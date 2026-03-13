@@ -13,3 +13,19 @@ def dummy_function_three():
 	y = 20
 	z = x + y
 	print(f"Sum is {z}")
+
+def dummy_function_four():
+	# Fourth dummy function
+	items = [1, 2, 3]
+	for item in items:
+		print(f"Item: {item}")
+
+def dummy_function_five():
+	# Fifth dummy function
+	message = "This is dummy function five."
+	print(message)
+
+def dummy_function_six():
+	# Sixth dummy function
+	for i in range(2):
+		print(f"dummy_function_six iteration {i}")
