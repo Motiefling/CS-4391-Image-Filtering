@@ -13,9 +13,4 @@ jobs:
           fetch-depth: 0
 
       # Prefer a stable tag (for example: @v1) after release.
-      - uses: SuchiiJain/CS4485_Capstone@main
-        with:
-          repo_path: .
-          create_issue: "true"
-          database_url: ${{ secrets.DATABASE_URL }}
-          fail_on_db_error: "true"
+      - uses: SuchiiJain/CS4485_Capstone@portias-supabase-integration
