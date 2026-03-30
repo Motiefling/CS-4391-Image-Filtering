@@ -2269,6 +2269,90 @@
       },
       "stable_id": "test.py::dummy_function_seventy"
     },
+    "test.py::dummy_function_seventy_five": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "c36f9f08fd2695651368f8f956fd542e0bf3cfe51441594635d2a3d532a04170",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_seventy_five",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_seventy_five"
+    },
+    "test.py::dummy_function_seventy_four": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "dbfb14cb17cf43f481d5b918651adf1bd7eba62bf87cb035d81da995da73cbe2",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_seventy_four",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_seventy_four"
+    },
     "test.py::dummy_function_seventy_one": {
       "calls": {
         "call_names": []
@@ -2310,6 +2394,48 @@
         "return_annotation": null
       },
       "stable_id": "test.py::dummy_function_seventy_one"
+    },
+    "test.py::dummy_function_seventy_three": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "730dc0df8261516c14c838dd79e33efff109b64d449f77c6dda2d2ac7bc9af25",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_seventy_three",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_seventy_three"
     },
     "test.py::dummy_function_seventy_two": {
       "calls": {
@@ -4012,6 +4138,70 @@
         "return_annotation": null
       },
       "stable_id": "test.py::normalize_contrast"
+    },
+    "test.py::sobel_edge_magnitude": {
+      "calls": {
+        "call_names": [
+          "ValueError",
+          "ValueError",
+          "len",
+          "len",
+          "len",
+          "math.sqrt",
+          "range",
+          "range",
+          "range",
+          "range",
+          "range",
+          "range"
+        ]
+      },
+      "conditions": {
+        "boolean_ops": [
+          "Or"
+        ],
+        "comparison_ops": [
+          "NotEq"
+        ]
+      },
+      "control_flow": {
+        "early_return_count": 1,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 5,
+        "if_count": 2,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": [
+          "ValueError",
+          "ValueError"
+        ]
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "630ca49b677cd6b06e33f9a033470c2e07ebc0d9f63bc39dd03816f454005fc2",
+      "is_public": true,
+      "returns": {
+        "return_count": 1,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "sobel_edge_magnitude",
+        "params": [
+          "image"
+        ],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::sobel_edge_magnitude"
     },
     "test.py::summarize_image_intensity": {
       "calls": {
