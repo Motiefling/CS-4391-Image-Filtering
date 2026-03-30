@@ -485,3 +485,58 @@ def compute_psnr(image_a, image_b, max_pixel_value=255.0):
 
 	import math
 	return 10 * math.log10((max_pixel_value * max_pixel_value) / mse)
+
+def dummy_function_seventy_three():
+	pass
+
+def dummy_function_seventy_four():
+	pass
+
+def dummy_function_seventy_five():
+	pass
+
+def sobel_edge_magnitude(image):
+	"""Compute Sobel edge magnitude map for a grayscale image.
+
+	Args:
+		image: 2D list of numeric pixel values.
+
+	Returns:
+		A 2D list with gradient magnitudes.
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+
+	height = len(image)
+	width = len(image[0])
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+
+	gx_kernel = [
+		[-1, 0, 1],
+		[-2, 0, 2],
+		[-1, 0, 1],
+	]
+	gy_kernel = [
+		[-1, -2, -1],
+		[0, 0, 0],
+		[1, 2, 1],
+	]
+
+	import math
+	edges = [[0.0 for _ in range(width)] for _ in range(height)]
+
+	for r in range(1, height - 1):
+		for c in range(1, width - 1):
+			gx = 0.0
+			gy = 0.0
+			for kr in range(3):
+				for kc in range(3):
+					pixel = image[r + kr - 1][c + kc - 1]
+					gx += pixel * gx_kernel[kr][kc]
+					gy += pixel * gy_kernel[kr][kc]
+
+			edges[r][c] = math.sqrt(gx * gx + gy * gy)
+
+	return edges
