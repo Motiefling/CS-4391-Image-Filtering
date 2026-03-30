@@ -415,3 +415,43 @@ def compute_intensity_histogram(image, bins=16):
 			histogram[index] += 1
 
 	return histogram
+
+def dummy_function_sixty_seven():
+	pass
+
+def dummy_function_sixty_eight():
+	pass
+
+def dummy_function_sixty_nine():
+	pass
+
+def compute_mse(image_a, image_b):
+	"""Compute mean squared error between two grayscale images.
+
+	Args:
+		image_a: First 2D list of numeric pixel values.
+		image_b: Second 2D list of numeric pixel values.
+
+	Returns:
+		Mean squared error as a float.
+	"""
+	if not image_a or not image_a[0] or not image_b or not image_b[0]:
+		raise ValueError("both images must be non-empty 2D lists")
+
+	height = len(image_a)
+	width = len(image_a[0])
+
+	if len(image_b) != height or len(image_b[0]) != width:
+		raise ValueError("images must have the same dimensions")
+
+	squared_error_sum = 0
+	pixel_count = height * width
+
+	for r in range(height):
+		if len(image_a[r]) != width or len(image_b[r]) != width:
+			raise ValueError("all rows in both images must have the same length")
+		for c in range(width):
+			diff = image_a[r][c] - image_b[r][c]
+			squared_error_sum += diff * diff
+
+	return squared_error_sum / pixel_count
