@@ -455,3 +455,33 @@ def compute_mse(image_a, image_b):
 			squared_error_sum += diff * diff
 
 	return squared_error_sum / pixel_count
+
+def dummy_function_seventy():
+	pass
+
+def dummy_function_seventy_one():
+	pass
+
+def dummy_function_seventy_two():
+	pass
+
+def compute_psnr(image_a, image_b, max_pixel_value=255.0):
+	"""Compute Peak Signal-to-Noise Ratio (PSNR) between two grayscale images.
+
+	Args:
+		image_a: First 2D list of numeric pixel values.
+		image_b: Second 2D list of numeric pixel values.
+		max_pixel_value: Maximum representable pixel intensity.
+
+	Returns:
+		PSNR value in decibels.
+	"""
+	if max_pixel_value <= 0:
+		raise ValueError("max_pixel_value must be positive")
+
+	mse = compute_mse(image_a, image_b)
+	if mse == 0:
+		return float("inf")
+
+	import math
+	return 10 * math.log10((max_pixel_value * max_pixel_value) / mse)
