@@ -11,4 +11,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: SuchiiJain/CS4485_Capstone@supabase-migration
+
+      # Prefer a stable tag (for example: @v1) after release.
+      - uses: SuchiiJain/CS4485_Capstone@main
+        with:
+          repo_path: .
+          create_issue: "true"
+          database_url: ${{ secrets.DATABASE_URL }}
+          fail_on_db_error: "true"
