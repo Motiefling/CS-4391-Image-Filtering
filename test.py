@@ -240,3 +240,39 @@ def summarize_image_intensity(image):
 		"max_intensity": max_intensity,
 		"mean_intensity": mean_intensity,
 	}
+
+def dummy_function_fifty_five():
+	pass
+
+def dummy_function_fifty_six():
+	pass
+
+def dummy_function_fifty_seven():
+	pass
+
+def threshold_image(image, threshold):
+	"""Convert a grayscale image into a binary mask using a threshold.
+
+	Args:
+		image: 2D list of numeric pixel values.
+		threshold: Numeric threshold where values >= threshold become 1.
+
+	Returns:
+		A new 2D list with 0/1 values after thresholding.
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+
+	width = len(image[0])
+	binary_image = []
+
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+
+		binary_row = []
+		for value in row:
+			binary_row.append(1 if value >= threshold else 0)
+		binary_image.append(binary_row)
+
+	return binary_image
