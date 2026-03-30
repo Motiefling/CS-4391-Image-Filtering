@@ -323,3 +323,53 @@ def normalize_contrast(image):
 		normalized.append(normalized_row)
 
 	return normalized
+
+def dummy_function_sixty_one():
+	pass
+
+def dummy_function_sixty_two():
+	pass
+
+def dummy_function_sixty_three():
+	pass
+
+def apply_box_blur(image, kernel_size=3):
+	"""Apply a mean box blur to a grayscale image.
+
+	Args:
+		image: 2D list of numeric pixel values.
+		kernel_size: Odd positive integer blur window size.
+
+	Returns:
+		A new 2D list with blurred pixel intensities.
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+	if kernel_size <= 0 or kernel_size % 2 == 0:
+		raise ValueError("kernel_size must be a positive odd integer")
+
+	height = len(image)
+	width = len(image[0])
+
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+
+	radius = kernel_size // 2
+	blurred = []
+
+	for r in range(height):
+		blurred_row = []
+		for c in range(width):
+			window_sum = 0
+			count = 0
+
+			for rr in range(max(0, r - radius), min(height, r + radius + 1)):
+				for cc in range(max(0, c - radius), min(width, c + radius + 1)):
+					window_sum += image[rr][cc]
+					count += 1
+
+			blurred_row.append(window_sum / count)
+		blurred.append(blurred_row)
+
+	return blurred
