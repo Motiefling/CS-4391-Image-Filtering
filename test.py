@@ -373,3 +373,45 @@ def apply_box_blur(image, kernel_size=3):
 		blurred.append(blurred_row)
 
 	return blurred
+
+def dummy_function_sixty_four():
+	pass
+
+def dummy_function_sixty_five():
+	pass
+
+def dummy_function_sixty_six():
+	pass
+
+def compute_intensity_histogram(image, bins=16):
+	"""Compute a histogram for grayscale intensities.
+
+	Args:
+		image: 2D list of numeric pixel values.
+		bins: Number of equal-width bins over [0, 255].
+
+	Returns:
+		List of length `bins` with per-bin counts.
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+	if bins <= 0:
+		raise ValueError("bins must be a positive integer")
+
+	width = len(image[0])
+	histogram = [0] * bins
+	bin_width = 256 / bins
+
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+		for value in row:
+			if value < 0 or value > 255:
+				raise ValueError("pixel intensities must be in the range [0, 255]")
+
+			index = int(value / bin_width)
+			if index >= bins:
+				index = bins - 1
+			histogram[index] += 1
+
+	return histogram
