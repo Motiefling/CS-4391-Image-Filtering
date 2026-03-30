@@ -805,6 +805,48 @@
       },
       "stable_id": "test.py::dummy_function_fifty"
     },
+    "test.py::dummy_function_fifty_eight": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "f4b87a4cf40659f9b0c29cae0f99a31ab9db2ac1cc2e3f43aa4e6e331100e320",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_fifty_eight",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_fifty_eight"
+    },
     "test.py::dummy_function_fifty_five": {
       "calls": {
         "call_names": []
@@ -888,6 +930,48 @@
         "return_annotation": null
       },
       "stable_id": "test.py::dummy_function_fifty_four"
+    },
+    "test.py::dummy_function_fifty_nine": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "840a4b20a654bfc00f19daa8d33c9c402c4bec687faa65141e2b6758f8096511",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_fifty_nine",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_fifty_nine"
     },
     "test.py::dummy_function_fifty_one": {
       "calls": {
@@ -1959,6 +2043,48 @@
         "return_annotation": null
       },
       "stable_id": "test.py::dummy_function_sixteen"
+    },
+    "test.py::dummy_function_sixty": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "68c6d8c43ecef4b0c088199883474a3475058e13475c5ec88ad9ebcfe5a37e6a",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_sixty",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_sixty"
     },
     "test.py::dummy_function_ten": {
       "calls": {
@@ -3046,6 +3172,70 @@
         "return_annotation": null
       },
       "stable_id": "test.py::dummy_function_two"
+    },
+    "test.py::normalize_contrast": {
+      "calls": {
+        "call_names": [
+          "ValueError",
+          "ValueError",
+          "flat_pixels.append",
+          "int",
+          "len",
+          "len",
+          "max",
+          "min",
+          "normalized.append",
+          "normalized_row.append",
+          "round"
+        ]
+      },
+      "conditions": {
+        "boolean_ops": [
+          "Or"
+        ],
+        "comparison_ops": [
+          "Eq",
+          "NotEq"
+        ]
+      },
+      "control_flow": {
+        "early_return_count": 2,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 4,
+        "if_count": 3,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": [
+          "ValueError",
+          "ValueError"
+        ]
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "7c4f9403203cc4cd4162bdd70d3282f31b6609755ec15be746c99fd91da9e303",
+      "is_public": true,
+      "returns": {
+        "return_count": 2,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "normalize_contrast",
+        "params": [
+          "image"
+        ],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::normalize_contrast"
     },
     "test.py::summarize_image_intensity": {
       "calls": {
