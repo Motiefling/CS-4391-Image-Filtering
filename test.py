@@ -540,3 +540,46 @@ def sobel_edge_magnitude(image):
 			edges[r][c] = math.sqrt(gx * gx + gy * gy)
 
 	return edges
+
+def dummy_function_seventy_six():
+	pass
+
+def dummy_function_seventy_seven():
+	pass
+
+def dummy_function_seventy_eight():
+	pass
+
+def sharpen_image_unsharp_mask(image, amount=1.0):
+	"""Sharpen a grayscale image using a simple unsharp mask approach.
+
+	Args:
+		image: 2D list of numeric pixel values.
+		amount: Strength of sharpening (0 means no sharpening).
+
+	Returns:
+		A new 2D list with sharpened pixel values clamped to [0, 255].
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+	if amount < 0:
+		raise ValueError("amount must be non-negative")
+
+	height = len(image)
+	width = len(image[0])
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+
+	blurred = apply_box_blur(image, kernel_size=3)
+	sharpened = []
+
+	for r in range(height):
+		sharpened_row = []
+		for c in range(width):
+			value = image[r][c] + amount * (image[r][c] - blurred[r][c])
+			value = max(0, min(255, int(round(value))))
+			sharpened_row.append(value)
+		sharpened.append(sharpened_row)
+
+	return sharpened
