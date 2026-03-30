@@ -631,3 +631,66 @@ def median_filter(image, kernel_size=3):
 		filtered.append(filtered_row)
 
 	return filtered
+
+def dummy_function_eighty_two():
+	pass
+
+def dummy_function_eighty_three():
+	pass
+
+def dummy_function_eighty_four():
+	pass
+
+def otsu_threshold(image):
+	"""Compute Otsu's global threshold for an 8-bit grayscale image.
+
+	Args:
+		image: 2D list of pixel values in [0, 255].
+
+	Returns:
+		Integer threshold value in [0, 255].
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+
+	width = len(image[0])
+	hist = [0] * 256
+	total_pixels = 0
+
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+		for value in row:
+			if value < 0 or value > 255:
+				raise ValueError("pixel intensities must be in the range [0, 255]")
+			hist[int(value)] += 1
+			total_pixels += 1
+
+	sum_total = 0
+	for i in range(256):
+		sum_total += i * hist[i]
+
+	best_threshold = 0
+	max_between_var = -1.0
+	weight_bg = 0
+	sum_bg = 0
+
+	for t in range(256):
+		weight_bg += hist[t]
+		if weight_bg == 0:
+			continue
+
+		weight_fg = total_pixels - weight_bg
+		if weight_fg == 0:
+			break
+
+		sum_bg += t * hist[t]
+		mean_bg = sum_bg / weight_bg
+		mean_fg = (sum_total - sum_bg) / weight_fg
+
+		between_var = weight_bg * weight_fg * (mean_bg - mean_fg) * (mean_bg - mean_fg)
+		if between_var > max_between_var:
+			max_between_var = between_var
+			best_threshold = t
+
+	return best_threshold
