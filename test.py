@@ -694,3 +694,12 @@ def otsu_threshold(image):
 			best_threshold = t
 
 	return best_threshold
+
+def dummy_function_eighty_five():
+	pass
+
+def dummy_function_eighty_six():
+	pass
+
+def dummy_function_eighty_seven():
+	pass

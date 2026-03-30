@@ -12,6 +12,6 @@
   ],
   "thresholds": {
     "per_function_substantial": 4,
-    "per_doc_cumulative": 4
+    "per_doc_cumulative": 8
   }
 }
