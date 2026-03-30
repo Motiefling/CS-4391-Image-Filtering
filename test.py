@@ -207,3 +207,36 @@ def dummy_function_fifty_three():
 def dummy_function_fifty_four():
 	pass
 
+def summarize_image_intensity(image):
+	"""Return min/max/mean intensity plus dimensions for a grayscale image.
+
+	Args:
+		image: 2D list of numeric pixel values.
+
+	Returns:
+		Dictionary with height, width, min_intensity, max_intensity, mean_intensity.
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+
+	height = len(image)
+	width = len(image[0])
+
+	flat_pixels = []
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+		for value in row:
+			flat_pixels.append(value)
+
+	min_intensity = min(flat_pixels)
+	max_intensity = max(flat_pixels)
+	mean_intensity = sum(flat_pixels) / len(flat_pixels)
+
+	return {
+		"height": height,
+		"width": width,
+		"min_intensity": min_intensity,
+		"max_intensity": max_intensity,
+		"mean_intensity": mean_intensity,
+	}
