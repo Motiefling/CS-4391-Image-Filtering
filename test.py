@@ -276,3 +276,50 @@ def threshold_image(image, threshold):
 		binary_image.append(binary_row)
 
 	return binary_image
+
+def dummy_function_fifty_eight():
+	pass
+
+def dummy_function_fifty_nine():
+	pass
+
+def dummy_function_sixty():
+	pass
+
+def normalize_contrast(image):
+	"""Linearly normalize grayscale intensities to the 0-255 range.
+
+	Args:
+		image: 2D list of numeric pixel values.
+
+	Returns:
+		A new 2D list with contrast-stretched integer values in [0, 255].
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+
+	width = len(image[0])
+	flat_pixels = []
+
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+		for value in row:
+			flat_pixels.append(value)
+
+	min_value = min(flat_pixels)
+	max_value = max(flat_pixels)
+
+	if max_value == min_value:
+		return [[0 for _ in row] for row in image]
+
+	scale = 255 / (max_value - min_value)
+	normalized = []
+
+	for row in image:
+		normalized_row = []
+		for value in row:
+			normalized_row.append(int(round((value - min_value) * scale)))
+		normalized.append(normalized_row)
+
+	return normalized
