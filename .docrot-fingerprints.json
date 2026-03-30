@@ -805,6 +805,48 @@
       },
       "stable_id": "test.py::dummy_function_fifty"
     },
+    "test.py::dummy_function_fifty_five": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "4636689f913d6377c2157424fb14d5dcbd4293cb14824221e7d3c5bd674929ed",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_fifty_five",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_fifty_five"
+    },
     "test.py::dummy_function_fifty_four": {
       "calls": {
         "call_names": []
@@ -888,6 +930,90 @@
         "return_annotation": null
       },
       "stable_id": "test.py::dummy_function_fifty_one"
+    },
+    "test.py::dummy_function_fifty_seven": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "e5ce004747ee3f15fe56356a6ce36b1b924ee2de0fd6d4991012e3167e3f70ee",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_fifty_seven",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_fifty_seven"
+    },
+    "test.py::dummy_function_fifty_six": {
+      "calls": {
+        "call_names": []
+      },
+      "conditions": {
+        "boolean_ops": [],
+        "comparison_ops": []
+      },
+      "control_flow": {
+        "early_return_count": 0,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 0,
+        "if_count": 0,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": []
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "718cebd7702e5b0bf741996af4337602289530003ffc14bb7417d2cfdc647e61",
+      "is_public": true,
+      "returns": {
+        "return_count": 0,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "dummy_function_fifty_six",
+        "params": [],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::dummy_function_fifty_six"
     },
     "test.py::dummy_function_fifty_three": {
       "calls": {
@@ -2982,6 +3108,66 @@
         "return_annotation": null
       },
       "stable_id": "test.py::summarize_image_intensity"
+    },
+    "test.py::threshold_image": {
+      "calls": {
+        "call_names": [
+          "ValueError",
+          "ValueError",
+          "binary_image.append",
+          "binary_row.append",
+          "len",
+          "len"
+        ]
+      },
+      "conditions": {
+        "boolean_ops": [
+          "Or"
+        ],
+        "comparison_ops": [
+          "GtE",
+          "NotEq"
+        ]
+      },
+      "control_flow": {
+        "early_return_count": 1,
+        "elif_count": 0,
+        "else_count": 0,
+        "for_count": 2,
+        "if_count": 2,
+        "while_count": 0
+      },
+      "exceptions": {
+        "except_handlers": [],
+        "has_bare_except": false,
+        "raises": [
+          "ValueError",
+          "ValueError"
+        ]
+      },
+      "file_path": "test.py",
+      "fingerprint_hash": "b892597f256142e77540601e30ece7bb33802d1da366ed78c7f927254c4aacb0",
+      "is_public": true,
+      "returns": {
+        "return_count": 1,
+        "returns_none": false
+      },
+      "side_effects": {
+        "auth_calls": [],
+        "db_calls": [],
+        "file_calls": [],
+        "network_calls": []
+      },
+      "signature": {
+        "defaults": [],
+        "name": "threshold_image",
+        "params": [
+          "image",
+          "threshold"
+        ],
+        "return_annotation": null
+      },
+      "stable_id": "test.py::threshold_image"
     }
   }
 }
