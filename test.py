@@ -583,3 +583,51 @@ def sharpen_image_unsharp_mask(image, amount=1.0):
 		sharpened.append(sharpened_row)
 
 	return sharpened
+
+def dummy_function_seventy_nine():
+	pass
+
+def dummy_function_eighty():
+	pass
+
+def dummy_function_eighty_one():
+	pass
+
+def median_filter(image, kernel_size=3):
+	"""Apply a median filter to reduce salt-and-pepper noise in a grayscale image.
+
+	Args:
+		image: 2D list of numeric pixel values.
+		kernel_size: Odd positive integer neighborhood size.
+
+	Returns:
+		A new 2D list with median-filtered values.
+	"""
+	if not image or not image[0]:
+		raise ValueError("image must be a non-empty 2D list")
+	if kernel_size <= 0 or kernel_size % 2 == 0:
+		raise ValueError("kernel_size must be a positive odd integer")
+
+	height = len(image)
+	width = len(image[0])
+	for row in image:
+		if len(row) != width:
+			raise ValueError("all rows in image must have the same length")
+
+	radius = kernel_size // 2
+	filtered = []
+
+	for r in range(height):
+		filtered_row = []
+		for c in range(width):
+			neighborhood = []
+			for rr in range(max(0, r - radius), min(height, r + radius + 1)):
+				for cc in range(max(0, c - radius), min(width, c + radius + 1)):
+					neighborhood.append(image[rr][cc])
+
+			neighborhood.sort()
+			median_value = neighborhood[len(neighborhood) // 2]
+			filtered_row.append(median_value)
+		filtered.append(filtered_row)
+
+	return filtered
